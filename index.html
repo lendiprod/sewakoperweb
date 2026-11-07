@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PINJAM KOPER — Pinjam Mudah, Jalan Nyaman | Sewa Koper Taman Krian Regency</title>
+  <meta name="description" content="Liburan praktis tanpa harus beli koper. Sewa koper berkualitas ukuran 24 inci (Rp15.000/hari) dan 28 inci (Rp20.000/hari) di Taman Krian Regency. Minimal sewa 4 hari.">
+  <meta name="keywords" content="pinjam koper, sewa koper krian, sewa koper sidoarjo, rental koper taman krian regency, koper 24 inci, koper 28 inci">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0F172A">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PINJAM KOPER — Liburan Praktis, Tanpa Harus Beli Koper">
+  <meta property="og:description" content="Sewa koper berkualitas mulai Rp15.000/hari di Taman Krian Regency. Praktis, hemat, dan mudah dipesan.">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Structured Data SEO (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pinjam Koper",
+    "description": "Sewa koper berkualitas untuk perjalanan Anda. Praktis, hemat, dan mudah dipesan.",
+    "slogan": "Pinjam Mudah, Jalan Nyaman.",
+    "telephone": "+6282139900346",
+    "url": "https://bit.ly/pinjamkoperkak",
+    "hasMap": "https://maps.app.goo.gl/boZBV3Ryb3fGyR5B8",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Taman Krian Regency",
+      "addressLocality": "Krian, Sidoarjo",
+      "addressCountry": "ID"
+    },
+    "priceRange": "Rp15.000 - Rp20.000"
+  }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       1. DESIGN TOKENS & RESET
+       ========================================================================== */
+    :root {
+      --bg-white: #FFFFFF;
+      --bg-offwhite: #F8FAFC;
+      --bg-subtle: #F1F5F9;
+      --navy-900: #0F172A;
+      --navy-800: #1E293B;
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --text-light: #64748B;
+      --yellow-brand: #FFC700;
+      --yellow-hover: #F5B800;
+      --yellow-soft: #FEF9C3;
+      --yellow-border: #FDE047;
+      --wa-green: #25D366;
+      --wa-green-hover: #1EBE5D;
+      --border-color: #E2E8F0;
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 9999px;
+      --shadow-subtle: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 1px 3px 0 rgba(15, 23, 42, 0.03);
+      --shadow-card: 0 10px 30px -5px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+      --container-max: 1120px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-white);
+      color: var(--text-main);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ==========================================================================
+       2. BUTTONS & INTERACTIVE ELEMENTS
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 14px 24px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      transition: background-color 0.18s ease, transform 0.15s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    /* Primary Booking CTA: Brand Yellow with Dark Navy Text */
+    .btn-booking {
+      background-color: var(--yellow-brand);
+      color: var(--navy-900);
+      border-color: var(--yellow-brand);
+      box-shadow: 0 4px 14px rgba(255, 199, 0, 0.3);
+    }
+
+    .btn-booking:hover {
+      background-color: var(--yellow-hover);
+      border-color: var(--yellow-hover);
+    }
+
+    /* Secondary / Dark Navy CTA */
+    .btn-navy {
+      background-color: var(--navy-900);
+      color: #FFFFFF;
+      border-color: var(--navy-900);
+    }
+
+    .btn-navy:hover {
+      background-color: var(--navy-800);
+    }
+
+    /* Outline / WhatsApp CTA */
+    .btn-wa-outline {
+      background-color: var(--bg-white);
+      color: var(--navy-900);
+      border-color: var(--border-color);
+    }
+
+    .btn-wa-outline:hover {
+      background-color: var(--bg-offwhite);
+      border-color: #CBD5E1;
+    }
+
+    .btn-wa-solid {
+      background-color: var(--wa-green);
+      color: #FFFFFF;
+      border-color: var(--wa-green);
+    }
+
+    .btn-wa-solid:hover {
+      background-color: var(--wa-green-hover);
+    }
+
+    /* ==========================================================================
+       3. HEADER / NAVIGATION (Minimalist & Clean)
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo-svg {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .brand-text-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--navy-900);
+      line-height: 1.1;
+    }
+
+    .brand-name span {
+      display: inline-block;
+      background-color: var(--yellow-brand);
+      padding: 0 5px;
+      border-radius: 4px;
+      margin-left: 2px;
+    }
+
+    .brand-tagline {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--navy-900);
+    }
+
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-cta .btn {
+      padding: 10px 18px;
+      font-size: 0.875rem;
+    }
+
+    /* ==========================================================================
+       4. HERO SECTION (Price & Product Immediately Visible)
+       ========================================================================== */
+    .hero-section {
+      padding: 36px 0 56px;
+      background: linear-gradient(180deg, var(--bg-offwhite) 0%, var(--bg-white) 100%);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--yellow-soft);
+      border: 1px solid var(--yellow-border);
+      color: var(--navy-900);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 16px;
+      transition: background-color 0.18s ease, border-color 0.18s ease;
+    }
+
+    a.hero-badge:hover {
+      background-color: var(--yellow-brand);
+      border-color: var(--yellow-hover);
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 4.5vw, 3.1rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      color: var(--navy-900);
+      margin-bottom: 14px;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      color: var(--text-muted);
+      max-width: 520px;
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    /* Quick Price Bar inside Hero so users see prices without scrolling */
+    .hero-price-strip {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      max-width: 480px;
+      margin-bottom: 14px;
+    }
+
+    .hero-price-pill {
+      background-color: var(--bg-white);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .hero-price-pill.featured {
+      border-color: var(--yellow-brand);
+      background-color: #FFFDF5;
+    }
+
+    .hpp-size {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+
+    .hpp-amount {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--navy-900);
+      letter-spacing: -0.02em;
+    }
+
+    .hpp-amount small {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .min-rent-notice {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--navy-900);
+      background-color: #FFFBEB;
+      border: 1px solid #FDE68A;
+      padding: 7px 14px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 26px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-actions .btn {
+      flex: 1 1 200px;
+      padding: 15px 24px;
+      font-size: 1rem;
+    }
+
+    /* Dominant Product Showcase Visual (Matching Reference Image 24" Black & 28" Yellow) */
+    .hero-visual-card {
+      position: relative;
+      background: radial-gradient(circle at 50% 35%, #FFFFFF 0%, #F1F5F9 100%);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px 20px 24px;
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+    }
+
+    .hero-visual-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .sewa-koper-heading {
+      font-size: 1.5rem;
+      font-weight: 800;
+      font-style: italic;
+      line-height: 1.05;
+      color: var(--navy-900);
+    }
+
+    .sewa-koper-heading::after {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 5px;
+      background-color: var(--yellow-brand);
+      border-radius: 99px;
+      margin-top: 4px;
+    }
+
+    .suitcases-stage {
+      position: relative;
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+    }
+
+    .hero-visual-footer {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background-color: #FFFBEB;
+      border: 1.5px solid var(--yellow-brand);
+      border-radius: var(--radius-pill);
+      padding: 8px 18px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--navy-900);
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ==========================================================================
+       5. DAFTAR PRODUK & HARGA SECTION
+       ========================================================================== */
+    .section {
+      padding: 64px 0;
+    }
+
+    .section-offwhite {
+      background-color: var(--bg-offwhite);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--navy-900);
+      background-color: var(--yellow-brand);
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(1.65rem, 3.2vw, 2.25rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--navy-900);
+      margin-bottom: 8px;
+    }
+
+    .section-desc {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background-color: var(--bg-white);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s ease;
+    }
+
+    .product-card:hover {
+      border-color: var(--navy-900);
+    }
+
+    .product-card.highlight {
+      border-color: var(--yellow-brand);
+      border-width: 2px;
+    }
+
+    .product-visual-box {
+      background-color: var(--bg-offwhite);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 250px;
+      border: 1px solid #EDF2F7;
+    }
+
+    .product-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .size-pill {
+      display: inline-block;
+      background-color: var(--navy-900);
+      color: #FFFFFF;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+      letter-spacing: 0.03em;
+    }
+
+    .min-sewa-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background-color: var(--bg-subtle);
+      padding: 5px 10px;
+      border-radius: var(--radius-pill);
+    }
+
+    .product-name {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--navy-900);
+      margin-bottom: 12px;
+    }
+
+    /* Prominent Price Box - Most dominant visual element after headline */
+    .product-price-box {
+      background-color: var(--yellow-brand);
+      color: var(--navy-900);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .price-main {
+      font-size: clamp(1.85rem, 3.5vw, 2.3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    .price-unit {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--navy-900);
+    }
+
+    .product-meta-list {
+      list-style: none;
+      margin-bottom: 24px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 14px;
+    }
+
+    .product-meta-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-main);
+      padding: 5px 0;
+    }
+
+    .product-card-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    /* ==========================================================================
+       6. CARA BOOKING (3 Simple Steps)
+       ========================================================================== */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto 36px;
+    }
+
+    .step-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .step-number {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background-color: var(--yellow-brand);
+      color: var(--navy-900);
+      font-size: 1.25rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-title {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--navy-900);
+      margin-bottom: 4px;
+    }
+
+    .step-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .steps-cta-bar {
+      text-align: center;
+    }
+
+    /* ==========================================================================
+       7. KONTAK & LOKASI SECTION
+       ========================================================================== */
+    .contact-card {
+      max-width: 880px;
+      margin: 0 auto;
+      background-color: var(--navy-900);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 36px 24px;
+      box-shadow: var(--shadow-card);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .contact-brand-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .contact-title {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .contact-sub {
+      color: #CBD5E1;
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    .info-items {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background-color: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      transition: background-color 0.18s ease, border-color 0.18s ease;
+    }
+
+    a.info-item:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+      border-color: var(--yellow-brand);
+    }
+
+    .info-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background-color: var(--yellow-brand);
+      color: var(--navy-900);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-label {
+      font-size: 0.75rem;
+      color: #94A3B8;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .info-value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .contact-actions-box {
+      background-color: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-actions-box .btn {
+      width: 100%;
+      padding: 15px 20px;
+    }
+
+    .btn-map {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-map:hover {
+      background-color: rgba(255, 255, 255, 0.18);
+    }
+
+    /* ==========================================================================
+       8. FOOTER
+       ========================================================================== */
+    .site-footer {
+      padding: 28px 0 96px; /* Extra bottom padding on mobile for sticky bar */
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      background-color: var(--bg-white);
+    }
+
+    /* ==========================================================================
+       9. FLOATING WHATSAPP & MOBILE STICKY BOTTOM BAR
+       ========================================================================== */
+    .floating-wa {
+      position: fixed;
+      right: 20px;
+      bottom: 84px; /* Above mobile sticky CTA */
+      z-index: 90;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--wa-green);
+      color: #FFFFFF;
+      padding: 13px 18px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.38);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .floating-wa:hover {
+      background-color: var(--wa-green-hover);
+      transform: translateY(-2px);
+    }
+
+    .floating-wa svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+
+    .floating-wa-label {
+      display: none;
+    }
+
+    /* Mobile Bottom Sticky CTA */
+    .mobile-sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 85;
+      background-color: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid var(--border-color);
+      padding: 10px 16px;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 10px;
+      box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.06);
+    }
+
+    .mobile-sticky-cta .btn {
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      border-radius: 10px;
+    }
+
+    /* ==========================================================================
+       10. RESPONSIVE BREAKPOINTS (Tablet & Desktop)
+       ========================================================================== */
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+
+      .hero-section {
+        padding: 56px 0 72px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1.08fr 0.92fr;
+        gap: 48px;
+      }
+
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+
+      .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .step-card {
+        flex-direction: column;
+      }
+
+      .contact-card {
+        grid-template-columns: 1.15fr 0.85fr;
+        padding: 44px;
+      }
+
+      .mobile-sticky-cta {
+        display: none;
+      }
+
+      .floating-wa {
+        bottom: 24px;
+        right: 24px;
+      }
+
+      .floating-wa-label {
+        display: inline;
+      }
+
+      .site-footer {
+        padding: 32px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       HEADER NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-link" aria-label="Pinjam Koper Beranda">
+        <!-- Brand Logo SVG (Sesuai Identitas Visual Pinjam Koper) -->
+        <svg class="brand-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Pinjam Koper">
+          <circle cx="60" cy="60" r="56" fill="#0F172A" stroke="#FFC700" stroke-width="5"/>
+          <circle cx="60" cy="60" r="48" stroke="#FFC700" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+          <!-- Handle -->
+          <path d="M51 22V14C51 12.5 52.2 11.5 53.5 11.5H64.5C65.8 11.5 67 12.5 67 14V22" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- Tilted Yellow Suitcase Icon -->
+          <g transform="rotate(-10 60 36)">
+            <rect x="44" y="20" width="30" height="36" rx="5" fill="#FFC700" stroke="#0F172A" stroke-width="2"/>
+            <line x1="51" y1="24" x2="51" y2="52" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+            <line x1="59" y1="24" x2="59" y2="52" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+            <line x1="67" y1="24" x2="67" y2="52" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+          </g>
+          <!-- Brand Badge Text -->
+          <text x="60" y="73" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-style="italic" font-size="20">Pinjam</text>
+          <text x="60" y="92" text-anchor="middle" fill="#FFC700" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-style="italic" font-size="20">Koper</text>
+          <rect x="24" y="97" width="72" height="11" rx="5.5" fill="#FFC700"/>
+          <text x="60" y="105" text-anchor="middle" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="6.5">KRIAN - SIDOARJO</text>
+        </svg>
+        <div class="brand-text-wrap">
+          <div class="brand-name">PINJAM<span>KOPER</span></div>
+          <div class="brand-tagline">Pinjam Mudah, Jalan Nyaman.</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigasi Utama">
+        <a href="#produk">Daftar Harga</a>
+        <a href="#cara-booking">Cara Booking</a>
+        <a href="#lokasi">Kontak & Lokasi</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="https://bit.ly/pinjamkoperkak" target="_blank" rel="noopener noreferrer" class="btn btn-booking">
+          Booking Sekarang
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        
+        <!-- Left Column: Copy, Direct Price Visibility & Primary CTAs -->
+        <div class="hero-content">
+          <a href="https://maps.app.goo.gl/boZBV3Ryb3fGyR5B8" target="_blank" rel="noopener noreferrer" class="hero-badge" aria-label="Buka lokasi Taman Krian Regency di Google Maps">
+            <span>📍 Taman Krian Regency</span>
+            <span>•</span>
+            <span>Pinjam Mudah, Jalan Nyaman</span>
+          </a>
+
+          <h1 class="hero-title">Liburan Praktis, Tanpa Harus Beli Koper.</h1>
+          <p class="hero-subtitle">
+            Sewa koper berkualitas untuk perjalanan Anda. Praktis, hemat, dan mudah dipesan.
+          </p>
+
+          <!-- Immediate Price Visibility (Above the fold without scrolling) -->
+          <div class="hero-price-strip" aria-label="Ringkasan Harga Sewa">
+            <a href="#produk" class="hero-price-pill">
+              <span class="hpp-size">Koper 24 Inci</span>
+              <span class="hpp-amount">Rp15.000 <small>/ hari</small></span>
+            </a>
+            <a href="#produk" class="hero-price-pill featured">
+              <span class="hpp-size">Koper 28 Inci</span>
+              <span class="hpp-amount">Rp20.000 <small>/ hari</small></span>
+            </a>
+          </div>
+
+          <div class="min-rent-notice">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Minimal masa sewa 4 hari</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="https://bit.ly/pinjamkoperkak" target="_blank" rel="noopener noreferrer" class="btn btn-booking">
+              <span>Booking Sekarang</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="https://wa.me/6282139900346" target="_blank" rel="noopener noreferrer" class="btn btn-wa-outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.031 2C6.508 2 2.023 6.485 2.023 12.008c0 1.766.46 3.49 1.335 5.01L2 22l5.122-1.343a9.967 9.967 0 004.908 1.294h.004c5.522 0 10.007-4.485 10.007-10.008C22.041 6.485 17.555 2 12.031 2zm5.825 14.142c-.246.693-1.43 1.326-1.996 1.411-.51.076-1.175.108-1.897-.121-.438-.139-1.001-.325-1.719-.635-3.025-1.306-5.001-4.35-5.152-4.552-.15-.201-1.23-1.637-1.23-3.123 0-1.486.778-2.216 1.054-2.518.276-.302.603-.377.804-.377.201 0 .402.002.578.01.186.009.435-.07.68.52.251.604.854 2.089.929 2.24.075.151.126.327.025.528-.101.202-.151.328-.302.504-.151.176-.317.393-.452.528-.151.151-.308.315-.132.617.176.302.782 1.29 1.68 2.091 1.155 1.03 2.129 1.349 2.431 1.5.302.151.477.126.653-.075.176-.202.754-.881.955-1.183.201-.302.402-.252.678-.151.277.101 1.759.83 2.06.981.302.151.503.227.578.353.076.126.076.73-.17 1.423z"/>
+              </svg>
+              <span>Tanya via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Showcase Koper 24 Inci (Hitam) & 28 Inci (Kuning) Sesuai Referensi -->
+        <div class="hero-visual-card">
+          <div class="hero-visual-top">
+            <div class="sewa-koper-heading">Sewa<br>Koper</div>
+            <span class="size-pill">24" &amp; 28" Ready</span>
+          </div>
+
+          <div class="suitcases-stage">
+            <svg viewBox="0 0 500 390" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Koper 24 Inci Hitam Rp15.000 per hari dan Koper 28 Inci Kuning Rp20.000 per hari">
+              <defs>
+                <!-- Subtle Floor Shadows -->
+                <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#0F172A" stop-opacity="0.22"/>
+                  <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+                </radialGradient>
+                <!-- Yellow 28" Body Gradient -->
+                <linearGradient id="yellowBody" x1="250" y1="90" x2="450" y2="340" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#FFE033"/>
+                  <stop offset="45%" stop-color="#FFC700"/>
+                  <stop offset="100%" stop-color="#E5A800"/>
+                </linearGradient>
+                <!-- Black 24" Body Gradient -->
+                <linearGradient id="blackBody" x1="115" y1="145" x2="295" y2="355" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#334155"/>
+                  <stop offset="35%" stop-color="#1E293B"/>
+                  <stop offset="100%" stop-color="#090D16"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Floor Shadows -->
+              <ellipse cx="350" cy="364" rx="105" ry="12" fill="url(#floorShadow)"/>
+              <ellipse cx="205" cy="372" rx="95" ry="11" fill="url(#floorShadow)"/>
+
+              <!-- ============================================================
+                   SUITCASE 28 INCI (BRIGHT YELLOW - BACK RIGHT)
+                   ============================================================ -->
+              <g id="koper-28-yellow">
+                <!-- Telescopic Handle 28" -->
+                <rect x="312" y="22" width="8" height="82" fill="#1E293B"/>
+                <rect x="372" y="22" width="8" height="82" fill="#1E293B"/>
+                <rect x="308" y="16" width="76" height="11" rx="5.5" fill="#0F172A"/>
+                <!-- Top Carry Handle -->
+                <path d="M326 98C326 93 366 93 366 98" stroke="#1E293B" stroke-width="5" stroke-linecap="round"/>
+
+                <!-- Wheels 28" -->
+                <g transform="translate(274, 344)">
+                  <rect x="4" y="-8" width="12" height="10" fill="#0F172A"/>
+                  <circle cx="10" cy="8" r="12" fill="#0F172A"/>
+                  <circle cx="10" cy="8" r="7" fill="#F8FAFC"/>
+                  <circle cx="10" cy="8" r="2.5" fill="#0F172A"/>
+                </g>
+                <g transform="translate(408, 344)">
+                  <rect x="4" y="-8" width="12" height="10" fill="#0F172A"/>
+                  <circle cx="10" cy="8" r="12" fill="#0F172A"/>
+                  <circle cx="10" cy="8" r="7" fill="#F8FAFC"/>
+                  <circle cx="10" cy="8" r="2.5" fill="#0F172A"/>
+                </g>
+
+                <!-- Main Hardshell Body 28" -->
+                <rect x="256" y="96" width="180" height="248" rx="22" fill="url(#yellowBody)" stroke="#D99B00" stroke-width="2"/>
+                <!-- Center Top Emblem Plate -->
+                <rect x="331" y="106" width="30" height="12" rx="3" fill="#FFC700" stroke="#B47B00" stroke-width="1.2"/>
+
+                <!-- Vertical Ribbed Grooves 28" -->
+                <g opacity="0.45">
+                  <rect x="274" y="106" width="6" height="228" rx="3" fill="#B47B00"/>
+                  <rect x="292" y="106" width="6" height="228" rx="3" fill="#B47B00"/>
+                  <rect x="310" y="106" width="6" height="228" rx="3" fill="#B47B00"/>
+                  <rect x="328" y="122" width="6" height="212" rx="3" fill="#B47B00"/>
+                  <rect x="358" y="122" width="6" height="212" rx="3" fill="#B47B00"/>
+                  <rect x="376" y="106" width="6" height="228" rx="3" fill="#B47B00"/>
+                  <rect x="394" y="106" width="6" height="228" rx="3" fill="#B47B00"/>
+                  <rect x="412" y="106" width="6" height="228" rx="3" fill="#B47B00"/>
+                </g>
+                <!-- Specular Highlights -->
+                <g opacity="0.55">
+                  <rect x="272" y="106" width="3" height="228" rx="1.5" fill="#FFFBEB"/>
+                  <rect x="290" y="106" width="3" height="228" rx="1.5" fill="#FFFBEB"/>
+                  <rect x="308" y="106" width="3" height="228" rx="1.5" fill="#FFFBEB"/>
+                  <rect x="374" y="106" width="3" height="228" rx="1.5" fill="#FFFBEB"/>
+                  <rect x="392" y="106" width="3" height="228" rx="1.5" fill="#FFFBEB"/>
+                </g>
+                <!-- Side Lock Latch -->
+                <rect x="435" y="148" width="4" height="32" rx="2" fill="#0F172A"/>
+              </g>
+
+              <!-- ============================================================
+                   SUITCASE 24 INCI (SLEEK BLACK - FRONT LEFT)
+                   ============================================================ -->
+              <g id="koper-24-black">
+                <!-- Telescopic Handle 24" -->
+                <rect x="176" y="78" width="7" height="74" fill="#1E293B"/>
+                <rect x="229" y="78" width="7" height="74" fill="#1E293B"/>
+                <rect x="172" y="72" width="68" height="10" rx="5" fill="#0F172A"/>
+                <!-- Top Carry Handle -->
+                <path d="M186 146C186 141 226 141 226 146" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+
+                <!-- Wheels 24" -->
+                <g transform="translate(132, 352)">
+                  <rect x="3" y="-8" width="12" height="10" fill="#0F172A"/>
+                  <circle cx="9" cy="8" r="11" fill="#0F172A"/>
+                  <circle cx="9" cy="8" r="6.5" fill="#F8FAFC"/>
+                  <circle cx="9" cy="8" r="2.2" fill="#0F172A"/>
+                </g>
+                <g transform="translate(260, 352)">
+                  <rect x="3" y="-8" width="12" height="10" fill="#0F172A"/>
+                  <circle cx="9" cy="8" r="11" fill="#0F172A"/>
+                  <circle cx="9" cy="8" r="6.5" fill="#F8FAFC"/>
+                  <circle cx="9" cy="8" r="2.2" fill="#0F172A"/>
+                </g>
+
+                <!-- Main Hardshell Body 24" -->
+                <rect x="122" y="146" width="168" height="206" rx="20" fill="url(#blackBody)" stroke="#334155" stroke-width="1.8"/>
+                <!-- Center Top Emblem Plate -->
+                <rect x="193" y="155" width="26" height="10" rx="2.5" fill="#0F172A" stroke="#64748B" stroke-width="1"/>
+
+                <!-- Vertical Ribbed Grooves 24" -->
+                <g opacity="0.85">
+                  <rect x="138" y="156" width="5" height="186" rx="2.5" fill="#090D16"/>
+                  <rect x="154" y="156" width="5" height="186" rx="2.5" fill="#090D16"/>
+                  <rect x="170" y="156" width="5" height="186" rx="2.5" fill="#090D16"/>
+                  <rect x="186" y="156" width="5" height="186" rx="2.5" fill="#090D16"/>
+                  <rect x="203" y="170" width="5" height="172" rx="2.5" fill="#090D16"/>
+                  <rect x="220" y="156" width="5" height="186" rx="2.5" fill="#090D16"/>
+                  <rect x="236" y="156" width="5" height="186" rx="2.5" fill="#090D16"/>
+                  <rect x="252" y="156" width="5" height="186" rx="2.5" fill="#090D16"/>
+                  <rect x="268" y="156" width="5" height="186" rx="2.5" fill="#090D16"/>
+                </g>
+                <!-- Specular Rib Highlights 24" -->
+                <g opacity="0.28">
+                  <rect x="136" y="156" width="2" height="186" rx="1" fill="#94A3B8"/>
+                  <rect x="152" y="156" width="2" height="186" rx="1" fill="#94A3B8"/>
+                  <rect x="168" y="156" width="2" height="186" rx="1" fill="#94A3B8"/>
+                  <rect x="184" y="156" width="2" height="186" rx="1" fill="#94A3B8"/>
+                  <rect x="218" y="156" width="2" height="186" rx="1" fill="#94A3B8"/>
+                  <rect x="234" y="156" width="2" height="186" rx="1" fill="#94A3B8"/>
+                  <rect x="250" y="156" width="2" height="186" rx="1" fill="#94A3B8"/>
+                </g>
+              </g>
+
+              <!-- ============================================================
+                   PRICE CALLOUT BADGES ON VISUAL (MATCHING REFERENCE POSTER)
+                   ============================================================ -->
+              <!-- Callout 24 Inci -->
+              <g transform="translate(16, 210)">
+                <rect x="0" y="18" width="166" height="62" rx="14" fill="#FFC700" stroke="#FFFFFF" stroke-width="3"/>
+                <rect x="28" y="0" width="96" height="28" rx="9" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+                <text x="76" y="19" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-style="italic" font-size="15">24 inci</text>
+                <text x="16" y="52" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="14">Rp</text>
+                <text x="38" y="58" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-style="italic" font-size="29">15.000</text>
+                <text x="148" y="72" text-anchor="end" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-style="italic" font-size="13">/hari</text>
+              </g>
+
+              <!-- Callout 28 Inci -->
+              <g transform="translate(312, 168)">
+                <rect x="0" y="18" width="172" height="62" rx="14" fill="#FFC700" stroke="#FFFFFF" stroke-width="3"/>
+                <rect x="34" y="0" width="98" height="28" rx="9" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+                <text x="83" y="19" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-style="italic" font-size="15">28 inci</text>
+                <text x="14" y="52" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="14">Rp</text>
+                <text x="36" y="58" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-style="italic" font-size="29">20.000</text>
+                <text x="154" y="72" text-anchor="end" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-style="italic" font-size="13">/hari</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="hero-visual-footer">
+            <span>📅 Minimal Sewa 4 Hari</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         DAFTAR PRODUK & HARGA
+         ====================================================================== -->
+    <section id="produk" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Pilihan Koper</span>
+          <h2 class="section-title">Daftar Produk &amp; Harga</h2>
+          <p class="section-desc">Pilih ukuran koper sesuai kebutuhan perjalanan Anda. Minimal masa sewa 4 hari.</p>
+        </div>
+
+        <div class="products-grid">
+          
+          <!-- PRODUCT CARD 1: KOPER 24 INCI -->
+          <article class="product-card">
+            <div>
+              <div class="product-visual-box">
+                <!-- Clean Single Koper 24 Inci Black SVG -->
+                <svg width="160" height="210" viewBox="0 0 180 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Koper 24 Inci Hitam">
+                  <rect x="64" y="12" width="6" height="45" fill="#1E293B"/>
+                  <rect x="110" y="12" width="6" height="45" fill="#1E293B"/>
+                  <rect x="60" y="8" width="60" height="9" rx="4.5" fill="#0F172A"/>
+                  <rect x="28" y="52" width="124" height="162" rx="16" fill="url(#blackBody)" stroke="#334155" stroke-width="2"/>
+                  <rect x="78" y="60" width="24" height="8" rx="2" fill="#0F172A" stroke="#64748B"/>
+                  <g opacity="0.8">
+                    <rect x="44" y="62" width="4" height="142" rx="2" fill="#090D16"/>
+                    <rect x="58" y="62" width="4" height="142" rx="2" fill="#090D16"/>
+                    <rect x="72" y="62" width="4" height="142" rx="2" fill="#090D16"/>
+                    <rect x="88" y="72" width="4" height="132" rx="2" fill="#090D16"/>
+                    <rect x="104" y="62" width="4" height="142" rx="2" fill="#090D16"/>
+                    <rect x="118" y="62" width="4" height="142" rx="2" fill="#090D16"/>
+                    <rect x="132" y="62" width="4" height="142" rx="2" fill="#090D16"/>
+                  </g>
+                  <circle cx="46" cy="224" r="9" fill="#0F172A"/>
+                  <circle cx="46" cy="224" r="5" fill="#F8FAFC"/>
+                  <circle cx="134" cy="224" r="9" fill="#0F172A"/>
+                  <circle cx="134" cy="224" r="5" fill="#F8FAFC"/>
+                </svg>
+              </div>
+
+              <div class="product-badge-row">
+                <span class="size-pill">MEDIUM • 24"</span>
+                <span class="min-sewa-tag">Min. sewa 4 hari</span>
+              </div>
+
+              <h3 class="product-name">KOPER 24 INCI</h3>
+
+              <div class="product-price-box">
+                <div class="price-main">Rp15.000</div>
+                <div class="price-unit">/ hari</div>
+              </div>
+
+              <ul class="product-meta-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Minimal masa sewa 4 hari</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Koper bersih, terawat &amp; siap pakai</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="product-card-actions">
+              <a href="https://bit.ly/pinjamkoperkak" target="_blank" rel="noopener noreferrer" class="btn btn-booking">
+                Booking Sekarang
+              </a>
+              <a href="https://wa.me/6282139900346" target="_blank" rel="noopener noreferrer" class="btn btn-wa-outline">
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- PRODUCT CARD 2: KOPER 28 INCI -->
+          <article class="product-card highlight">
+            <div>
+              <div class="product-visual-box">
+                <!-- Clean Single Koper 28 Inci Yellow SVG -->
+                <svg width="175" height="225" viewBox="0 0 190 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Koper 28 Inci Kuning">
+                  <rect x="66" y="10" width="6" height="42" fill="#1E293B"/>
+                  <rect x="118" y="10" width="6" height="42" fill="#1E293B"/>
+                  <rect x="62" y="6" width="66" height="9" rx="4.5" fill="#0F172A"/>
+                  <rect x="24" y="46" width="142" height="178" rx="18" fill="url(#yellowBody)" stroke="#D99B00" stroke-width="2"/>
+                  <rect x="82" y="54" width="26" height="9" rx="2" fill="#FFC700" stroke="#B47B00"/>
+                  <g opacity="0.45">
+                    <rect x="40" y="56" width="5" height="158" rx="2.5" fill="#B47B00"/>
+                    <rect x="56" y="56" width="5" height="158" rx="2.5" fill="#B47B00"/>
+                    <rect x="72" y="56" width="5" height="158" rx="2.5" fill="#B47B00"/>
+                    <rect x="92" y="68" width="5" height="146" rx="2.5" fill="#B47B00"/>
+                    <rect x="112" y="56" width="5" height="158" rx="2.5" fill="#B47B00"/>
+                    <rect x="128" y="56" width="5" height="158" rx="2.5" fill="#B47B00"/>
+                    <rect x="144" y="56" width="5" height="158" rx="2.5" fill="#B47B00"/>
+                  </g>
+                  <circle cx="44" cy="234" r="10" fill="#0F172A"/>
+                  <circle cx="44" cy="234" r="5.5" fill="#F8FAFC"/>
+                  <circle cx="146" cy="234" r="10" fill="#0F172A"/>
+                  <circle cx="146" cy="234" r="5.5" fill="#F8FAFC"/>
+                </svg>
+              </div>
+
+              <div class="product-badge-row">
+                <span class="size-pill">LARGE • 28"</span>
+                <span class="min-sewa-tag">Min. sewa 4 hari</span>
+              </div>
+
+              <h3 class="product-name">KOPER 28 INCI</h3>
+
+              <div class="product-price-box">
+                <div class="price-main">Rp20.000</div>
+                <div class="price-unit">/ hari</div>
+              </div>
+
+              <ul class="product-meta-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Minimal masa sewa 4 hari</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Kapasitas ekstra luas &amp; siap pakai</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="product-card-actions">
+              <a href="https://bit.ly/pinjamkoperkak" target="_blank" rel="noopener noreferrer" class="btn btn-booking">
+                Booking Sekarang
+              </a>
+              <a href="https://wa.me/6282139900346" target="_blank" rel="noopener noreferrer" class="btn btn-wa-outline">
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CARA BOOKING (3 LANGKAH SEDERHANA)
+         ====================================================================== -->
+    <section id="cara-booking" class="section section-offwhite">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Proses Cepat</span>
+          <h2 class="section-title">Cara Booking</h2>
+          <p class="section-desc">Pesan koper hanya dalam 3 langkah mudah tanpa ribet.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div>
+              <h3 class="step-title">Pilih ukuran koper</h3>
+              <p class="step-text">Sesuaikan pilihan koper 24 inci atau 28 inci dengan kebutuhan perjalanan Anda.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div>
+              <h3 class="step-title">Tentukan tanggal penyewaan</h3>
+              <p class="step-text">Tentukan durasi dan tanggal pemakaian koper (minimal masa sewa 4 hari).</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div>
+              <h3 class="step-title">Klik booking &amp; konfirmasi WA</h3>
+              <p class="step-text">Klik tombol booking dan konfirmasi pesanan Anda melalui WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps-cta-bar">
+          <a href="https://bit.ly/pinjamkoperkak" target="_blank" rel="noopener noreferrer" class="btn btn-booking">
+            Booking Sekarang
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         KONTAK & LOKASI
+         ====================================================================== -->
+    <section id="lokasi" class="section">
+      <div class="container">
+        <div class="contact-card">
+          
+          <div>
+            <div class="contact-brand-row">
+              <span class="section-eyebrow" style="margin-bottom:0;">Kontak &amp; Lokasi</span>
+            </div>
+            <h2 class="contact-title">Pinjam Koper</h2>
+            <p class="contact-sub">Pinjam Mudah, Jalan Nyaman. Hubungi kami atau kunjungi lokasi kami di Taman Krian Regency.</p>
+
+            <div class="info-items">
+              <a href="https://maps.app.goo.gl/boZBV3Ryb3fGyR5B8" target="_blank" rel="noopener noreferrer" class="info-item" aria-label="Buka Taman Krian Regency langsung di Google Maps">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label">Lokasi (Klik Buka Maps)</div>
+                  <div class="info-value">Taman Krian Regency</div>
+                </div>
+              </a>
+
+              <a href="https://wa.me/6282139900346" target="_blank" rel="noopener noreferrer" class="info-item" aria-label="Chat WhatsApp 082139900346">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label">WhatsApp</div>
+                  <div class="info-value">082139900346</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-actions-box">
+            <a href="https://bit.ly/pinjamkoperkak" target="_blank" rel="noopener noreferrer" class="btn btn-booking">
+              <span>Booking Sekarang</span>
+            </a>
+
+            <a href="https://wa.me/6282139900346" target="_blank" rel="noopener noreferrer" class="btn btn-wa-solid">
+              <span>Tanya via WhatsApp</span>
+            </a>
+
+            <a href="https://maps.app.goo.gl/boZBV3Ryb3fGyR5B8" target="_blank" rel="noopener noreferrer" class="btn btn-map">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+              <span>Buka Lokasi di Google Maps</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>PINJAM KOPER</strong> — Pinjam Mudah, Jalan Nyaman. | <a href="https://maps.app.goo.gl/boZBV3Ryb3fGyR5B8" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Taman Krian Regency</a> • WA: <a href="https://wa.me/6282139900346" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">082139900346</a></p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       FLOATING WHATSAPP BUTTON (TETAP TERLIHAT SAAT DI-SCROLL)
+       ======================================================================== -->
+  <a href="https://wa.me/6282139900346" target="_blank" rel="noopener noreferrer" class="floating-wa" aria-label="Chat via WhatsApp 082139900346">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.031 2C6.508 2 2.023 6.485 2.023 12.008c0 1.766.46 3.49 1.335 5.01L2 22l5.122-1.343a9.967 9.967 0 004.908 1.294h.004c5.522 0 10.007-4.485 10.007-10.008C22.041 6.485 17.555 2 12.031 2zm5.825 14.142c-.246.693-1.43 1.326-1.996 1.411-.51.076-1.175.108-1.897-.121-.438-.139-1.001-.325-1.719-.635-3.025-1.306-5.001-4.35-5.152-4.552-.15-.201-1.23-1.637-1.23-3.123 0-1.486.778-2.216 1.054-2.518.276-.302.603-.377.804-.377.201 0 .402.002.578.01.186.009.435-.07.68.52.251.604.854 2.089.929 2.24.075.151.126.327.025.528-.101.202-.151.328-.302.504-.151.176-.317.393-.452.528-.151.151-.308.315-.132.617.176.302.782 1.29 1.68 2.091 1.155 1.03 2.129 1.349 2.431 1.5.302.151.477.126.653-.075.176-.202.754-.881.955-1.183.201-.302.402-.252.678-.151.277.101 1.759.83 2.06.981.302.151.503.227.578.353.076.126.076.73-.17 1.423z"/>
+    </svg>
+    <span class="floating-wa-label">Tanya via WhatsApp</span>
+  </a>
+
+  <!-- ========================================================================
+       MOBILE BOTTOM STICKY CTA
+       ======================================================================== -->
+  <div class="mobile-sticky-cta" role="region" aria-label="Aksi Cepat Mobile">
+    <a href="https://wa.me/6282139900346" target="_blank" rel="noopener noreferrer" class="btn btn-wa-outline">
+      Tanya via WhatsApp
+    </a>
+    <a href="https://bit.ly/pinjamkoperkak" target="_blank" rel="noopener noreferrer" class="btn btn-booking">
+      Booking Sekarang
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       EMBEDDED JAVASCRIPT (Smooth Anchor Scroll & Conversion UX)
+       ======================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+      // Smooth scroll untuk navigasi internal dengan memperhitungkan tinggi sticky header
+      var internalLinks = document.querySelectorAll('a[href^="#"]');
+      var header = document.querySelector('.site-header');
+
+      internalLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          var targetId = this.getAttribute('href');
+          if (!targetId || targetId === '#') return;
+          var targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            var headerHeight = header ? header.offsetHeight : 0;
+            var elementPosition = targetEl.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: elementPosition - headerHeight - 12,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
